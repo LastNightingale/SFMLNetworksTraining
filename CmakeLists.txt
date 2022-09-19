@@ -1,0 +1,10 @@
+cmake_minimum_required (VERSION 3.16)
+
+set(BUILD_SHARED_LIBS OFF)
+
+add_subdirectory ("sfml")
+
+add_executable(SFMLNetworksTraining
+main.cpp)
+
+target_link_libraries(SFMLNetworksTraining sfml-system sfml-graphics sfml-network) 
